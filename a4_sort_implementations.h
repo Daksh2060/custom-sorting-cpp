@@ -13,7 +13,7 @@ using namespace std;
 template <typename T>
 SortStats bubble_sort(vector<T> &v){
 
-    ////Start timer and accumulator for comparisons
+    //Start timer and accumulator for comparisons
     ulong num_comps = 0; 
     clock_t start = clock(); 
 
@@ -35,7 +35,7 @@ SortStats bubble_sort(vector<T> &v){
         }
     }
     
-    ////End clock to get time of sorting
+    //End clock to get time of sorting
     clock_t end = clock();
     double elapsed_cpu_time_sec = double(end - start) / CLOCKS_PER_SEC;
 
