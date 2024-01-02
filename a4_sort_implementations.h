@@ -4,8 +4,12 @@
 
 using namespace std;
 
-
-//Bubble Sort implementation taken from README example
+/* 
+ Bubble Sort: Compares and swaps adjacent elements until the entire array is sorted.
+ Inefficient for large datasets.
+ Quadratic time complexity O(n^2).
+ Stable and in-place.
+*/
 template <typename T>
 SortStats bubble_sort(vector<T> &v){
 
@@ -39,11 +43,11 @@ SortStats bubble_sort(vector<T> &v){
     return SortStats{"Bubble sort", v.size(), num_comps, elapsed_cpu_time_sec};
 }
 
-
-
-
-
-
+/*
+ Insertion Sort: Builds the final sorted array one item at a time.
+ Efficient for small datasets or nearly sorted data.
+ Quadratic time complexity O(n^2) in the worst case.
+*/
 template <typename T>
 SortStats insertion_sort(vector<T> &v){
 
@@ -79,10 +83,11 @@ SortStats insertion_sort(vector<T> &v){
     return SortStats{"Insertion sort", v.size(), num_comps, elapsed_cpu_time_sec};
 }
 
-
-
-
-
+/*
+ Selection Sort: Finds the minimum element from the unsorted part and swaps it with the first element.
+ Repeats until the entire array is sorted.
+ Quadratic time complexity O(n^2).
+*/
 template <typename T>
 SortStats selection_sort(vector<T> &v){
 
@@ -120,13 +125,6 @@ SortStats selection_sort(vector<T> &v){
     
     return SortStats{"Selection sort", v.size(), num_comps, elapsed_cpu_time_sec};
 }
-
-
-
-
-
-
-
 
 //Merge helper function used to merge 2 sorted vectors into 1
 template <typename T>
@@ -175,7 +173,6 @@ vector<T> merge(vector<T> &v1, vector<T> &v2, ulong &num_comps){
     return v;
 }
 
-
 //Helper function for merge sort which can take more arguments
 template <typename T>
 void merge_sort_helper(vector<T> &v, ulong &num_comps){
@@ -201,8 +198,12 @@ void merge_sort_helper(vector<T> &v, ulong &num_comps){
     v = merge(v1, v2, num_comps);
 }
 
-
-//Primary function of merge sort only used to call helper
+/*
+ Merge Sort: Divides the array into two halves, recursively sorts them, and then merges them.
+ Guaranteed O(n log n) time complexity.
+ Requires additional space.
+ Primary function of merge sort only used to call helper
+*/
 template <typename T>
 SortStats merge_sort(vector<T> &v){
 
@@ -217,13 +218,6 @@ SortStats merge_sort(vector<T> &v){
     
     return SortStats{"Merge sort", v.size(), num_comps, elapsed_cpu_time_sec};
 }
-
-
-
-
-
-
-//Implementation of quicksort based on CMPT225 Week 9 sorting.cpp from lecture notes
 
 //Partition helper function used for selection pivots
 template <typename T>
@@ -255,7 +249,6 @@ int partition(vector<T> &v, int start, int end, ulong &num_comps){
     return i;
 }
 
-
 //Quick sort helper used to take more arguments
 template <typename T>
 void quick_sort_helper(vector<T>& v, int start, int end, ulong &num_comps){
@@ -274,8 +267,12 @@ void quick_sort_helper(vector<T>& v, int start, int end, ulong &num_comps){
     quick_sort_helper(v, pivot + 1, end, num_comps);
 }
 
-
-//Primary function for quick sort used to call helper
+/*
+ Quick Sort: Chooses a pivot, partitions the array into two halves,
+ and recursively sorts each half.
+ Average-case O(n log n) time complexity.
+ Primary function for quick sort used to call helper
+*/
 template <typename T>
 SortStats quick_sort(vector<T> &v){
 
@@ -291,12 +288,11 @@ SortStats quick_sort(vector<T> &v){
     return SortStats{"Quick sort", v.size(), num_comps, elapsed_cpu_time_sec};
 }
 
-
-
-
-
-
-
+/*
+ Shell Sort: An extension of insertion sort that allows for swapping elements
+ that are far apart. Reduces the distance between elements gradually.
+ Time complexity varies but often better than O(n^2).
+*/
 template <typename T>
 SortStats shell_sort(vector<T> &v){
 
@@ -333,13 +329,6 @@ SortStats shell_sort(vector<T> &v){
     return SortStats{"Shell sort", v.size(), num_comps, elapsed_cpu_time_sec};
 }
 
-
-
-
-
-
-
-
 //Helper function for insertion sort used in iquick sort 
 template <typename T>
 void iquick_insertion_helper(vector<T> &v, int low, int high, ulong &num_comps){
@@ -363,7 +352,6 @@ void iquick_insertion_helper(vector<T> &v, int low, int high, ulong &num_comps){
         v[j]= val ;
     }
 }
-
 
 //Helper function used to choose pivot for iquick sort
 template <typename T>
@@ -397,7 +385,6 @@ int iquick_partition(vector<T> &v, int low, int high, ulong &num_comps){
     //Return pivot index
     return j;
 }
-
 
 //Iquick helper used to take in more arguments than primary function
 template <typename T>
@@ -435,8 +422,12 @@ void iquick_sort_helper(vector<T> &v, int low, int high, ulong &num_comps){
    }
 }
 
-
-//Primary function of Iquick sort only used to call helper and track info
+/*
+ Improved Quick Sort (Iquick Sort): An optimized version of Quick Sort that switches
+ to Insertion Sort for small subarrays to reduce overhead.
+ Average-case O(n log n) time complexity.
+ Primary function of Iquick sort only used to call helper and track info
+*/
 template <typename T>
 SortStats iquick_sort(vector<T> &v){
 
