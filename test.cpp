@@ -1,8 +1,8 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include "a4_base.h"
-#include "a4_sort_implementations.h"
+#include "base.h"
+#include "sort_implementations.h"
 #include <cassert>
 #include <string>
 #include <random>
