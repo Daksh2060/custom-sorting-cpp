@@ -169,12 +169,12 @@ Using Excel or Google Sheets, create a table of all the data you generated. Here
 is an example of what the first four rows of the table ought to look like (the
 numbers in your table might be different):
 
-| **Name**    | **N** | **Comparisons** | **CPU Seconds** |
-|-------------|-------|-----------------|-----------------|
-| bubble sort |  2000 | 3998000         | 0.003197        |
-| bubble sort |  4000 | 15996000        | 0.014169        |
-| bubble sort |  6000 | 35994000        | 0.035031        |
-| bubble sort |  8000 | 63992000        | 0.066863        |
+  | **Name**    | **N** | **Comparisons** | **CPU Seconds** |
+  |-------------|-------|-----------------|-----------------|
+  | bubble sort |  2000 | 3998000         | 0.003197        |
+  | bubble sort |  4000 | 15996000        | 0.014169        |
+  | bubble sort |  6000 | 35994000        | 0.035031        |
+  | bubble sort |  8000 | 63992000        | 0.066863        |
 
 Please make the table 4 columns, and label each column with the given name, as
 shown.
