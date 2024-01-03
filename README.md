@@ -1,3 +1,55 @@
+# 
+
+
+
+## Included Sorting Algorithms
+
+- **:** 
+
+- **:** 
+
+## How does it work?
+
+
+
+![](images/.png)
+
+
+
+## Installation and Use
+
+Follow these steps to set up and run the ************** in :
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone 
+   ```
+
+
+## Contact
+
+Feel free to reach out if you have any questions, suggestions, or feedback:
+
+- **Email:** dpa45@sfu.ca
+- **LinkedIn:** [@Daksh Patel](https://www.linkedin.com/in/daksh-patel-956622290/)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Sorting
 
 In this assignment, your task is to run performance experiments on 7 sorting
