@@ -43,10 +43,13 @@ Bubble sort, 8000, 63992000, 0.066863
 
 These results can be graphed easily if a user chooses to convert to a XLSX file. The following are the results yielded for the various included sorting algorihtms using the exact same randomly generated vectors of increasing sizes for each method:
 
+![Non-Recursive Comparisons](images/Non_Rec_Comp.png)
 
-![](images/.png)
+![Non-Recursive CPU Time](images/Non_Rec_Time.png)
 
+![Recursive Comparisons](images/Rec_Comp.png)
 
+![Recursive CPU Time](images/Rec_Time.png)
 
 ## Installation and Use
 
