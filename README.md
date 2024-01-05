@@ -63,10 +63,10 @@ Follow these steps to set up and run the testing program in C++:
 
 2. To run the included test file, use the makefile:
 
-  ```bash
-  make test
-  ./test
-  ```
+    ```bash
+    make test
+    ./test
+    ```
 
 3. To use the testing features in your project, include both headers:
 
