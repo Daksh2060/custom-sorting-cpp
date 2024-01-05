@@ -49,6 +49,8 @@ These results can be graphed easily if a user chooses to convert to a XLSX file.
 
 ![Recursive CPU Time](images/Rec_Time.png)
 
+*Note: Although the sorting tests were conducted on integers, the vectors can be of any comparable data type.
+
 ## Installation and Use
 
 Follow these steps to set up and run the ************** in :
