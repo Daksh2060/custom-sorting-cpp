@@ -75,6 +75,13 @@ Follow these steps to set up and run the testing program in C++:
   #include "sort_implementations.h"
   ```
 
+2. To run the included test file, execute the following command to compile and link (recommended in WSL):
+
+   ```bash
+   gcc -Wall -Wpedantic -std=c17 -march=haswell -o test test.c my_strlen.S
+   ./test
+   ```
+
 4. In your project file, under main add the following to format the CSV:
 
   ```bash
