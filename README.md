@@ -20,9 +20,9 @@ This C++ project is a simple performance testing system for sorting algorithms. 
 
 ## How does it work?
 
-The testing program works by using a custom object called `SortStats`. Each inlcuded sroting implmenetion returns a `SortStats` object upon completion which holds data about the procedure, such as the name of the sorting algorithm used, the size of the vector sorted, the number of comparison done, and the CPU time taken for the vector to be sorted, it also holds a string concationation of this data to be ouput into a CSV.
+The testing program works by using a custom object called `SortStats`. Each included sorting implementation returns a `SortStats` object upon completion which holds data about the procedure, such as the name of the sorting algorithm used, the size of the vector sorted, the number of comparisons done, and the CPU time taken for the vector to be sorted, it also holds a string concatenation of this data to be output into a CSV.
 
-The output within the CSV will be ordered as follows, using bubble sort as an example, sorting 4 vectors of varrying sizes:
+The output within the CSV will be ordered as follows, using bubble sort as an example, sorting 4 vectors of varying sizes:
 
   | **Name**    | **N** | **Comparisons** | **CPU Seconds** |
   |-------------|-------|-----------------|-----------------|
@@ -31,7 +31,7 @@ The output within the CSV will be ordered as follows, using bubble sort as an ex
   | bubble sort |  6000 | 35994000        | 0.035031        |
   | bubble sort |  8000 | 63992000        | 0.066863        |
 
-The raw CSV file will ouput in the following format, corresponding to the provided table above:
+The raw CSV file will output in the following format, corresponding to the provided table above:
 ```
 Bubble sort, 2000, 3998000, 0.003197
 Bubble sort, 4000, 15996000, 0.014169
@@ -39,7 +39,7 @@ Bubble sort, 6000, 35994000, 0.035031
 Bubble sort, 8000, 63992000, 0.066863
 ```
 
-These results can be graphed easily if a user chooses to convert to a XLSX file. The following are the results yielded for the various included sorting algorihtms using the exact same randomly generated vectors of increasing sizes for each method:
+These results can be graphed easily if a user chooses to convert to an XLSX file. The following are the results yielded for the various included sorting algorithms using the exact same randomly generated vectors of increasing sizes for each method:
 
 ![Non-Recursive Comparisons](images/Non_Rec_Comp.png)
 
