@@ -5,9 +5,20 @@ This C++ project is a simple performance testing system for sorting algorithms. 
 
 ## Included Sorting Algorithms
 
-- **:** 
+- **Bubble Sort:** A simple sorting method that repeatedly steps through the vector, compares adjacent elements, and swaps them if they are in the wrong order. It has a worst-case time complexity of O(n^2), making it very inefficient for large datasets.
 
-- **:** 
+- **Insertion Sort:** Builds the final sorted vector one element at a time by iteratively placing each element in its correct position. It has a worst-case time complexity of O(n^2) but performs well on small datasets and nearly sorted lists.
+
+- **Selection Sort:** Finds the minimum element in the unsorted part and places it at the beginning, repeating until the vector is sorted. It has a worst-case time complexity of O(n^2), also making it slow on large datasets.
+
+- **Merge Sort:** A divide-and-conquer algorithm that divides the vector into halves, recursively sorts them, and then merges them back together. It guarantees a stable O(n log n) time complexity, making it efficient for large datasets but requires extra space complexity to hold a temprorary vector.
+
+- **Quick Sort:** Selects a 'pivot,' partitions the array based on the pivot, and recursively sorts the sub-arrays. It has an average-case time complexity of O(n log n), with a worst-case scenario of O(n^2). It can be slower than some non-recruive sorting methods on smaller or sorted/partially-sorted data sets.
+
+- **Shell Sort:** Attempts to optimize insertion sort by sorting pairs of elements far apart and progressively reducing the gap. Its time complexity depends on the chosen gap sequence but is generally between O(n log^2 n) and O(n^2).
+
+- **Iquick Sort (Hybrid):** Is regular quick sort, except when the sub-vectors being sorted are shorter than some predetermined threshold length, insertion sort is used instead of quick sort. This threshold can be changed to fit use.
+
 
 ## How does it work?
 
