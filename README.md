@@ -1,5 +1,6 @@
-# 
+# Sorting Algorithm Testing Program
 
+This C++ project is a simple performance testing system for sorting algorithms. The provided sorting implementations sort vectors of any comparable data type, allowing the implementation of custom or hybird sorting algorithms to be tested. The program tests the comparison counts and runtimes of sorting algorithms, and compiles the results to a CSV file for easy access. Included in the program are the implementations of vaious common sorting algoirithms, as well as a hybrid sorting algorithm aiming to imrpove the slower runtime of quick sort on smaller datasets. 
 
 
 ## Included Sorting Algorithms
