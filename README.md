@@ -98,7 +98,7 @@ Follow these steps to set up and run the testing program in C++:
 
 ## Contact
 
-Feel free to reach out if you have any questions, suggestions, or feedback
+Feel free to reach out if you have any questions, suggestions, or feedback:
 
 - **Email:** dpa45@sfu.ca
 - **LinkedIn:** [@Daksh Patel](https://www.linkedin.com/in/daksh-patel-956622290/)
