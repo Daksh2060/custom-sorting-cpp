@@ -39,7 +39,7 @@ Bubble sort, 6000, 35994000, 0.035031
 Bubble sort, 8000, 63992000, 0.066863
 ```
 
-These results can be graphed easily if a user chooses to convert to an XLSX file. The following are the results yielded for the various included sorting algorithms using the exact same randomly generated vectors of increasing sizes for each method:
+These results can be graphed easily if a user chooses to convert to an XLSX file. The following are the results yielded for the various included sorting algorithms using the same randomly generated vectors of increasing sizes for each method:
 
 ![Non-Recursive Comparisons](images/Non_Rec_Comp.png)
 
@@ -53,17 +53,52 @@ These results can be graphed easily if a user chooses to convert to an XLSX file
 
 ## Installation and Use
 
-Follow these steps to set up and run the ************** in :
+Follow these steps to set up and run the testing program in C++:
 
 1. Clone the repository to your local machine:
 
-   ```bash
-   git clone 
-   ```
+  ```bash
+  git clone https://github.com/Daksh2060/sorting-test-framework-cpp
+  ```
+
+2. To run the included test file, use the makefile:
+
+  ```bash
+  make test
+  ./test
+  ```
+
+3. To use the testing features in your project, include both headers:
+
+  ```bash
+  #include "base.h"
+  #include "sort_implementations.h"
+  ```
+
+4. In your project file, under main add the following to format the CSV:
+
+  ```bash
+  std::ofstream outputFile("sorting_results.csv");
+  outputFile << "Sorting Name, N, Comparisons, Seconds" << std::endl;
+  ```
+
+5. Create a `SortStats` object to hold the results of your sorting, for example:
+
+  ```bash
+  std::vector<int> vector_1 = rand_vec(100, 0, 50000);
+  SortStats results = bubble_sort(vector_1);
+  ```
+
+6. Save the results to your CSV:
+
+  ```bash
+  string print = vector_1.to_csv();
+  outputFile << print << std::endl;
+  ```
 
 ## Contact
 
-Feel free to reach out if you have any questions, suggestions, or feedback:
+Feel free to reach out if you have any questions, suggestions, or feedback
 
 - **Email:** dpa45@sfu.ca
 - **LinkedIn:** [@Daksh Patel](https://www.linkedin.com/in/daksh-patel-956622290/)
