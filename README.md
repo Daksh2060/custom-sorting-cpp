@@ -57,9 +57,9 @@ Follow these steps to set up and run the testing program in C++:
 
 1. Clone the repository to your local machine:
 
-  ```bash
-  git clone https://github.com/Daksh2060/sorting-test-framework-cpp
-  ```
+    ```bash
+    git clone https://github.com/Daksh2060/sorting-test-framework-cpp
+    ```
 
 2. To run the included test file, use the makefile:
 
@@ -70,38 +70,31 @@ Follow these steps to set up and run the testing program in C++:
 
 3. To use the testing features in your project, include both headers:
 
-  ```bash
-  #include "base.h"
-  #include "sort_implementations.h"
-  ```
-
-2. To run the included test file, execute the following command to compile and link (recommended in WSL):
-
-   ```bash
-   gcc -Wall -Wpedantic -std=c17 -march=haswell -o test test.c my_strlen.S
-   ./test
-   ```
+    ```bash
+    #include "base.h"
+    #include "sort_implementations.h"
+    ```
 
 4. In your project file, under main add the following to format the CSV:
 
-  ```bash
-  std::ofstream outputFile("sorting_results.csv");
-  outputFile << "Sorting Name, N, Comparisons, Seconds" << std::endl;
-  ```
+    ```bash
+    std::ofstream outputFile("sorting_results.csv");
+    outputFile << "Sorting Name, N, Comparisons, Seconds" << std::endl;
+    ```
 
 5. Create a `SortStats` object to hold the results of your sorting, for example:
 
-  ```bash
-  std::vector<int> vector_1 = rand_vec(100, 0, 50000);
-  SortStats results = bubble_sort(vector_1);
-  ```
+    ```bash
+    std::vector<int> vector_1 = rand_vec(100, 0, 50000);
+    SortStats results = bubble_sort(vector_1);
+    ```
 
 6. Save the results to your CSV:
 
-  ```bash
-  string print = vector_1.to_csv();
-  outputFile << print << std::endl;
-  ```
+    ```bash
+    string print = vector_1.to_csv();
+    outputFile << print << std::endl;
+    ```
 
 ## Contact
 
