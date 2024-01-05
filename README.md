@@ -1,6 +1,6 @@
 # Sorting Algorithm Testing Program
 
-This C++ project is a simple performance testing system for sorting algorithms. The provided sorting implementations sort vectors of any comparable data type, allowing the implementation of custom or hybird sorting algorithms to be tested. The program tests the comparison counts and runtimes of sorting algorithms, and compiles the results to a CSV file for easy access. Included in the program are the implementations of vaious common sorting algoirithms, as well as a hybrid sorting algorithm aiming to imrpove the slower runtime of quick sort on smaller datasets. 
+This C++ project is a simple performance testing system for sorting algorithms. The provided sorting implementations sort vectors of any comparable data type, allowing the implementation of custom or hybrid sorting algorithms to be tested. The program tests the comparison counts and runtimes of sorting algorithms, and compiles the results to a CSV file for easy access. Included in the program are the implementations of various common sorting algorithms, as well as a hybrid sorting algorithm aiming to improve the slower runtime of quick sorting on smaller datasets. 
 
 
 ## Included Sorting Algorithms
@@ -11,9 +11,9 @@ This C++ project is a simple performance testing system for sorting algorithms. 
 
 - **Selection Sort:** Finds the minimum element in the unsorted part and places it at the beginning, repeating until the vector is sorted. It has a worst-case time complexity of O(n^2), also making it slow on large datasets.
 
-- **Merge Sort:** A divide-and-conquer algorithm that divides the vector into halves, recursively sorts them, and then merges them back together. It guarantees a stable O(n log n) time complexity, making it efficient for large datasets but requires extra space complexity to hold a temprorary vector.
+- **Merge Sort:** A divide-and-conquer algorithm that divides the vector into halves, recursively sorts them and then merges them back together. It guarantees a stable O(n log n) time complexity, making it efficient for large datasets but requires extra space complexity to hold a temporary vector.
 
-- **Quick Sort:** Selects a 'pivot,' partitions the array based on the pivot, and recursively sorts the sub-arrays. It has an average-case time complexity of O(n log n), with a worst-case scenario of O(n^2). It can be slower than some non-recruive sorting methods on smaller or sorted/partially-sorted data sets.
+- **Quick Sort:** Selects a 'pivot,' partitions the array based on the pivot, and recursively sorts the sub-arrays. It has an average-case time complexity of O(n log n), with a worst-case scenario of O(n^2). It can be slower than some non-recursive sorting methods on smaller or sorted/partially sorted data sets.
 
 - **Shell Sort:** Attempts to optimize insertion sort by sorting pairs of elements far apart and progressively reducing the gap. Its time complexity depends on the chosen gap sequence but is generally between O(n log^2 n) and O(n^2).
 
@@ -21,6 +21,7 @@ This C++ project is a simple performance testing system for sorting algorithms. 
 
 
 ## How does it work?
+
 
 
 
